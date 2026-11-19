@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Local app data (JSON DB, uploads, generated login links)
+data/
+storage/
+DEFAULT_LOGIN_URL.txt
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and debug
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches and tooling
+.vite/
+.cache/
+.eslintcache
+*.tsbuildinfo
+.turbo/
+
+# Test and coverage
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Native addon build artifacts (better-sqlite3, etc.)
+build/Release/
+*.node
