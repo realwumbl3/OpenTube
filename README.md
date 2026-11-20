@@ -72,7 +72,9 @@ A lightweight YouTube-style video platform built with **React**, **Vite**, and *
    npm run dev
    ```
 
-   On Windows you can double-click **`start-app.bat`** in the project folder (runs `npm run dev`).
+   If Node.js is missing (for example in a bare Linux container), `npm run dev` and `npm run server` run **`scripts/run.sh`**, which installs Node via the system package manager and runs **`npm install`** when needed.
+
+   On Windows you can double-click **`start-app.bat`** in the project folder (installs Node via winget if needed, then starts the stack).
 
 3. Open the app — typically **http://localhost:5173** (Vite uses the next free port if 5173 is taken; check the terminal).
 

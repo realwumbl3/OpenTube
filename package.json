@@ -4,8 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"vite\"",
-    "server": "node server/index.js",
+    "dev": "node scripts/launch-dev.mjs",
+    "dev:app": "concurrently \"npm run server:exec\" \"vite\"",
+    "server": "node scripts/launch-server.mjs",
+    "server:exec": "node server/index.js",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"
